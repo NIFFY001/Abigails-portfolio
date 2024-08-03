@@ -51,9 +51,9 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="w-[100%]">
+          <div className="w-[100%] bg-[#161513]">
             <video
-              className="bg-none"
+              className="bg-[#161513]"
               src={hero}
               autoPlay
               loop

@@ -12,7 +12,7 @@ function NavBar() {
 
   return (
     <nav
-      className="flex justify-between items-center px-5 md:px-10 md:py-2 py-6  text-[#D9D9D9] bg-[#080808] sticky top-0 z-30"
+      className="flex justify-between items-center px-5 md:px-10 md:py-2 py-6  text-[#D9D9D9] bg-[#161513] sticky top-0 z-30"
       style={{ borderBottom: "1px solid #FFFFFF" }}
     >
       <Link to="/">
