@@ -21,36 +21,32 @@ function NavBar() {
 
       <div className="hidden md:flex items-center gap-4 md:gap-10">
         <Link to="">
-          <button className="hover:border-b hover:pb-1 text-xs md:text-sm">
+          <button className="relative border-b-0 after:content-[''] after:block after:h-[2px] after:w-full after:absolute after:left-0 after:bottom-0 hover:after:bg-gradient-to-r from-[#B16CEA] via-[#FF7460] to-[#FFA84B] hover:pb-1 text-xs md:text-sm">
             Home
           </button>
         </Link>
         <Link to="">
-          <button className="hover:border-b hover:pb-1 text-xs md:text-sm">
+          <button className="relative border-b-0 after:content-[''] after:block after:h-[2px] after:w-full after:absolute after:left-0 after:bottom-0 hover:after:bg-gradient-to-r from-[#B16CEA] via-[#FF7460] to-[#FFA84B] hover:pb-1 text-xs md:text-sm">
             About
           </button>
         </Link>
         <Link to="">
-          <button className="hover:border-b hover:pb-1 text-xs md:text-sm">
+          <button className="relative border-b-0 after:content-[''] after:block after:h-[2px] after:w-full after:absolute after:left-0 after:bottom-0 hover:after:bg-gradient-to-r from-[#B16CEA] via-[#FF7460] to-[#FFA84B] hover:pb-1 text-xs md:text-sm">
             Services
           </button>
         </Link>
         <Link to="">
-          <button className="hover:border-b hover:pb-1 text-xs md:text-sm">
+          <button className="relative border-b-0 after:content-[''] after:block after:h-[2px] after:w-full after:absolute after:left-0 after:bottom-0 hover:after:bg-gradient-to-r from-[#B16CEA] via-[#FF7460] to-[#FFA84B] hover:pb-1 text-xs md:text-sm">
             Projects
           </button>
         </Link>
         <Link to="">
-          <button className="hover:border-b hover:pb-1 text-xs md:text-sm">
+          <button className="relative border-b-0 after:content-[''] after:block after:h-[2px] after:w-full after:absolute after:left-0 after:bottom-0 hover:after:bg-gradient-to-r from-[#B16CEA] via-[#FF7460] to-[#FFA84B] hover:pb-1 text-xs md:text-sm">
             Blog
           </button>
         </Link>
       </div>
-      <Link
-        to="https://drive.google.com/file/d/1qREtwVGYbwqbxOYG6wmkz58M3-VzTNzi/view?usp=drivesdk"
-        target="blank"
-        className="hidden md:block"
-      >
+      <Link to="" target="blank" className="hidden md:block">
         <button className=" font-semibold py-2 px-2 md:px-5 hover:border hover:border-white rounded-2xl text-xs md:text-sm bg-[#FFFFFF] text-[#161513]">
           Lets Talk
         </button>
@@ -61,28 +57,34 @@ function NavBar() {
       {isMobileMenuOpen && (
         <div className="absolute top-full left-0 w-full bg-[#080808] text-[#D9D9D9] flex flex-col items-center gap-4 py-5">
           <Link to="">
-            <button className="hover:border-b hover:pb-1 text-xs md:text-sm">
+            <button className="relative border-b-0 after:content-[''] after:block after:h-[2px] after:w-full after:absolute after:left-0 after:bottom-0 hover:after:bg-gradient-to-r from-[#B16CEA] via-[#FF7460] to-[#FFA84B] hover:pb-1 text-xs md:text-sm">
               Home
             </button>
           </Link>
-          <Link to="" className="hover:border-b hover:pb-1 text-sm">
+          <Link
+            to=""
+            className="relative border-b-0 after:content-[''] after:block after:h-[2px] after:w-full after:absolute after:left-0 after:bottom-0 hover:after:bg-gradient-to-r from-[#B16CEA] via-[#FF7460] to-[#FFA84B] hover:pb-1 text-xs md:text-sm"
+          >
             About
           </Link>
-          <Link to="" className="hover:border-b hover:pb-1 text-sm">
+          <Link
+            to=""
+            className="relative border-b-0 after:content-[''] after:block after:h-[2px] after:w-full after:absolute after:left-0 after:bottom-0 hover:after:bg-gradient-to-r from-[#B16CEA] via-[#FF7460] to-[#FFA84B] hover:pb-1 text-xs md:text-sm"
+          >
             Services
           </Link>
-          <Link to="" className="hover:border-b hover:pb-1 text-sm">
+          <Link
+            to=""
+            className="relative border-b-0 after:content-[''] after:block after:h-[2px] after:w-full after:absolute after:left-0 after:bottom-0 hover:after:bg-gradient-to-r from-[#B16CEA] via-[#FF7460] to-[#FFA84B] hover:pb-1 text-xs md:text-sm"
+          >
             Projects
           </Link>
           <Link to="">
-            <button className="hover:border-b hover:pb-1 text-xs md:text-sm">
+            <button className="relative border-b-0 after:content-[''] after:block after:h-[2px] after:w-full after:absolute after:left-0 after:bottom-0 hover:after:bg-gradient-to-r from-[#B16CEA] via-[#FF7460] to-[#FFA84B] hover:pb-1 text-xs md:text-sm">
               Blog
             </button>
           </Link>
-          <Link
-            to="https://drive.google.com/file/d/1qREtwVGYbwqbxOYG6wmkz58M3-VzTNzi/view?usp=drivesdk"
-            target="blank"
-          >
+          <Link to="" target="blank">
             <button className="hover:bg-[#fff] text-[#161513] font-semibold py-2 px-5 hover:border hover:border-white rounded-2xl text-sm bg-[#FFFFFF]">
               Lets Talk
             </button>

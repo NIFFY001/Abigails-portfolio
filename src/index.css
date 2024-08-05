@@ -2,8 +2,31 @@
 @tailwind components;
 @tailwind utilities;
 
-.custom-gradient {
-  background: linear-gradient(to right, #b16cea, #ff5e69, #ff8a56, #ffa84b);
-  -webkit-background-clip: text;
-  color: transparent;
+.full-scroller-container {
+  overflow: hidden;
+  position: relative;
+  white-space: nowrap;
+}
+
+.full-scroller-track {
+  display: flex;
+  gap: 50px;
+
+  white-space: nowrap;
+  width: 200%; /* Double the width to accommodate both images */
+  animation: scroll 15s linear infinite;
+}
+
+.full-scroller-image {
+  flex: 0 0 auto;
+  width: 40%; /* Ensure the image takes up full width */
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
 }
