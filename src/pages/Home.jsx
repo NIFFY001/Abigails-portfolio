@@ -12,6 +12,12 @@ import scroller2 from "../assets/scroller2.png";
 import FullScroller from "../components/FullScroller";
 import ImageScroller from "../components/ImageScroller";
 import ImageSlider from "../components/ImageSlider";
+import about from "../assets/about.png";
+import abigail1 from "../assets/abigail1.png";
+import hire1 from "../assets/hire1.png";
+import cv from "../assets/cv.png";
+import slider from "../assets/slider.png";
+import abigail2 from "../assets/abigail2.png";
 
 export default function Home() {
   return (
@@ -70,8 +76,37 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="">
-          <FullScroller image={scroller} />
+        <div className="mb-[20px]">
+          <FullScroller image={slider} />
+        </div>
+
+        <div className="text-white flex  flex-col md:flex-row md:w-[100%] gap-5 items-center">
+          <div className="md:w-[50%] w-full">
+            <img src={abigail2} className="h-full w-full object-cover"></img>
+          </div>
+
+          <div className="md:w-[50%] ">
+            <div className="">
+              <h1 className="md:text-[60px] text-[50px]">
+                Need Creative Design?
+              </h1>
+              <h2 className="flex md:text-[50px] text-[40px] md:mb-[30px]">
+                I Can Help You!
+              </h2>
+              <p className=" mb-5 md:text-[25px] text-[20px]">
+                I am the Designerable—a skilled designer with expertise in both
+                design and prototyping.My toolkit includes Figma and Adobe
+                Illustrator, and I possess a basic understanding of frontend
+                development. If you're looking for the designer, look no
+                further, because you're right here.
+              </p>
+
+              <div className="flex gap-3 md:w-[200px] w-[100px]">
+                <img src={hire1}></img>
+                <img src={cv}></img>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </>

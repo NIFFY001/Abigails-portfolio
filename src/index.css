@@ -10,7 +10,7 @@
 
 .full-scroller-track {
   display: flex;
-  gap: 50px;
+  gap: 10px;
 
   white-space: nowrap;
   width: 200%; /* Double the width to accommodate both images */
@@ -19,7 +19,7 @@
 
 .full-scroller-image {
   flex: 0 0 auto;
-  width: 40%; /* Ensure the image takes up full width */
+  width: 50%; /* Ensure the image takes up full width */
 }
 
 @keyframes scroll {

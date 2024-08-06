@@ -29,6 +29,7 @@ const FullScroller = ({ image }) => {
           className="full-scroller-image w-full h-auto"
           alt="scroller"
         />
+
         <img
           src={image}
           className="full-scroller-image w-full h-auto"
