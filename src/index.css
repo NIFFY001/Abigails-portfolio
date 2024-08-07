@@ -19,7 +19,7 @@
 
 .full-scroller-image {
   flex: 0 0 auto;
-  width: 50%; /* Ensure the image takes up full width */
+  width: 80%; /* Ensure the image takes up full width */
 }
 
 @keyframes scroll {
@@ -29,4 +29,34 @@
   100% {
     transform: translateX(-50%);
   }
+}
+
+@keyframes slideInFromLeft {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInFromRight {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.animation-slide-in-left {
+  animation: slideInFromLeft 1s ease-out forwards;
+}
+
+.animation-slide-in-right {
+  animation: slideInFromRight 1s ease-out forwards;
 }
