@@ -20,7 +20,10 @@ function Footer() {
         <div className="">
           <div className="mb-4">
             <li className="flex  md:flex-row gap-5 md:text-xl">
-              <ul>Home</ul>
+              <a href="/">
+                <ul>Home</ul>
+              </a>
+
               <ul>About</ul>
               <ul>Services</ul>
               <ul>Projects</ul>
