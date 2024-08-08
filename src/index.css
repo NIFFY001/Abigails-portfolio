@@ -123,3 +123,24 @@
   transform-origin: center center;
   will-change: transform, opacity;
 }
+
+slider-container {
+  white-space: nowrap;
+}
+
+.slider-track {
+  animation: scroll 20s linear infinite;
+}
+
+.slider-image {
+  display: inline-block;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
