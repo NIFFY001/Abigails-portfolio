@@ -23,8 +23,10 @@ function Footer() {
               <a href="/">
                 <ul>Home</ul>
               </a>
+              <a a href="/about">
+                <ul>About</ul>
+              </a>
 
-              <ul>About</ul>
               <ul>Services</ul>
               <ul>Projects</ul>
               <ul>Blog</ul>
