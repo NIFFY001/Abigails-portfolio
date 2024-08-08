@@ -21,6 +21,10 @@ import numbers from "../assets/numbers.png";
 import testimonial from "../assets/testimonial.png";
 import motun from "../assets/motun.png";
 import switching from "../assets/switching.png";
+import viewall from "../assets/viewall.png";
+import side1 from "../assets/side1.png";
+import side2 from "../assets/side2.png";
+import Footer from "../components/Footer";
 
 export default function Home() {
   const { ref: ref1, inView: inView1 } = useInView({ triggerthrice: true });
@@ -31,7 +35,9 @@ export default function Home() {
   const { ref: ref6, inView: inView6 } = useInView({ triggeronce: true });
   const { ref: ref7, inView: inView7 } = useInView({ triggeronce: true });
   const { ref: ref8, inView: inView8 } = useInView({ triggerthrice: true });
-  const { ref: ref9, inView: inView9 } = useInView({ triggerthrice: true });
+  const { ref: ref9, inView: inView9 } = useInView({ triggerfive: true });
+  const { ref: ref10, inView: inView10 } = useInView({ triggerthrice: true });
+  const { ref: ref11, inView: inView11 } = useInView({ triggerthrice: true });
 
   useEffect(() => {
     console.log("Element 1 in view:", inView1);
@@ -43,6 +49,8 @@ export default function Home() {
     console.log("Element 7 in view:", inView7);
     console.log("Element 8 in view:", inView8);
     console.log("Element 9 in view:", inView8);
+    console.log("Element 10 in view:", inView10);
+    console.log("Element 11 in view:", inView11);
   }, [
     inView1,
     inView2,
@@ -53,13 +61,15 @@ export default function Home() {
     inView7,
     inView8,
     inView9,
+    inView10,
+    inView11,
   ]);
 
   return (
     <>
       <NavBar />
       <div className="bg-[#161513] min-h-[100vh]  w-full">
-        <div className="flex flex-col md:flex-row gap-5 md:leading-[60px] leading-[30px] md:mb-[17px] mb-[30px] items-center px-5">
+        <div className="flex flex-col md:flex-row gap-5 md:leading-[60px] leading-[30px] md:mb-[17px] mb-[30px] items-center md:px-20 px-5 p-10">
           <div
             ref={ref1}
             className={`w-full ${inView1 ? "animation-slide-in-left" : ""}`}
@@ -210,7 +220,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="bg-[#161513] flex flex-col md:flex-row px-5 w-[100%] items-center">
+        <div className="bg-[#161513] flex flex-col md:flex-row px-5 w-[100%] items-center p-5 ">
           <div
             ref={ref9}
             className={`md:w-[50%] text-white ${inView9 ? "zoom-in" : ""}`}
@@ -243,6 +253,28 @@ export default function Home() {
             </div>
           </div>
         </div>
+
+        <div className="md:px-20  bg-[#000000] p-8 items-center">
+          <div className="flex justify-between items-center mb-9">
+            <span className="bg-gradient-to-r from-[#B16CEA] via-[#FF7460] to-[#FFA84B] bg-clip-text text-transparent text-3xl">
+              Recent Blogs
+            </span>
+            <img src={viewall}></img>
+          </div>
+          <div className="flex flex-col md:flex-row gap-10">
+            <img
+              ref={ref10}
+              src={side1}
+              className={`w-[600px] ${inView10 ? "zoom-in" : ""}`}
+            />
+            <img
+              ref={ref11}
+              src={side2}
+              className={`w-[600px] ${inView11 ? "zoom-in" : ""}`}
+            />
+          </div>
+        </div>
+        <Footer />
       </div>
     </>
   );
