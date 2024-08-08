@@ -71,7 +71,9 @@ export default function About() {
             }`}
           />
         </div>
-        <Footer />
+        <div className="leading-6">
+          <Footer />
+        </div>
       </div>
     </>
   );
