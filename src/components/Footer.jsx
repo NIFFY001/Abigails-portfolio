@@ -9,7 +9,7 @@ function Footer() {
     <>
       <div className="bg-[#161513] md:px-20 flex  flex-col md:flex-row justify-between items-center text-white md:p-10 p-4 gap-5 border-t-2 border-t-bg-gradient-to-r from-[#B16CEA] via-[#FF7460] to-[#FFA84B] bg-clip-border">
         <div className="">
-          <img src={logo} className="mb-5"></img>
+          <img src={logo} className="mb-5 h-[40px] md:h-[50px]"></img>
           <p className="">
             I design the designerable, i have design skills and <br />
             prototyping skills, looking for that pretty <br /> designer she is
