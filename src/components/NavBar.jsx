@@ -15,21 +15,21 @@ function NavBar() {
       className="flex justify-between items-center px-5 md:px-10 md:py-2 py-6  text-[#D9D9D9] bg-[#161513] sticky top-0 z-30"
       style={{ borderBottom: "1px solid #FFFFFF" }}
     >
-      <Link to="/">
+      <a href="/">
         <img src={logo} alt="Logo" className="h-[40px] md:h-[50px] " />
-      </Link>
+      </a>
 
       <div className="hidden md:flex items-center gap-4 md:gap-10">
-        <Link to="">
+        <a href="/">
           <button className="relative border-b-0 after:content-[''] after:block after:h-[2px] after:w-full after:absolute after:left-0 after:bottom-0 hover:after:bg-gradient-to-r from-[#B16CEA] via-[#FF7460] to-[#FFA84B] hover:pb-1 text-xs md:text-sm">
             Home
           </button>
-        </Link>
-        <Link to="">
+        </a>
+        <a href="/about">
           <button className="relative border-b-0 after:content-[''] after:block after:h-[2px] after:w-full after:absolute after:left-0 after:bottom-0 hover:after:bg-gradient-to-r from-[#B16CEA] via-[#FF7460] to-[#FFA84B] hover:pb-1 text-xs md:text-sm">
             About
           </button>
-        </Link>
+        </a>
         <Link to="">
           <button className="relative border-b-0 after:content-[''] after:block after:h-[2px] after:w-full after:absolute after:left-0 after:bottom-0 hover:after:bg-gradient-to-r from-[#B16CEA] via-[#FF7460] to-[#FFA84B] hover:pb-1 text-xs md:text-sm">
             Services
