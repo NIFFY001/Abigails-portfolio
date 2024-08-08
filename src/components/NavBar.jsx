@@ -25,11 +25,11 @@ function NavBar() {
             Home
           </button>
         </a>
-        <a href="/about">
+        <Link to="/about">
           <button className="relative border-b-0 after:content-[''] after:block after:h-[2px] after:w-full after:absolute after:left-0 after:bottom-0 hover:after:bg-gradient-to-r from-[#B16CEA] via-[#FF7460] to-[#FFA84B] hover:pb-1 text-xs md:text-sm">
             About
           </button>
-        </a>
+        </Link>
         <Link to="">
           <button className="relative border-b-0 after:content-[''] after:block after:h-[2px] after:w-full after:absolute after:left-0 after:bottom-0 hover:after:bg-gradient-to-r from-[#B16CEA] via-[#FF7460] to-[#FFA84B] hover:pb-1 text-xs md:text-sm">
             Services
