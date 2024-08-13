@@ -67,17 +67,6 @@ function NavBar() {
             Projects
           </button>
         </Link>
-        <Link to="/blog">
-          <button
-            className={`relative border-b-0 after:content-[''] after:block after:h-[2px] after:w-full after:absolute after:left-0 after:bottom-0 hover:after:bg-gradient-to-r from-[#B16CEA] via-[#FF7460] to-[#FFA84B] hover:pb-1 pb-1 text-xs md:text-sm ${
-              isActive("/blog")
-                ? "after:bg-gradient-to-r from-[#B16CEA] via-[#FF7460] to-[#FFA84B]"
-                : ""
-            }`}
-          >
-            Blog
-          </button>
-        </Link>
       </div>
       <Link to="/cont" target="blank" className="hidden md:block">
         <button className="font-semibold py-2 px-2 md:px-5 hover:border hover:border-white rounded-2xl text-xs md:text-sm bg-[#FFFFFF] text-[#161513]">
@@ -133,17 +122,7 @@ function NavBar() {
               Projects
             </button>
           </Link>
-          <Link to="/blog">
-            <button
-              className={`relative border-b-0 after:content-[''] after:block after:h-[2px] after:w-full after:absolute after:left-0 after:bottom-0 hover:after:bg-gradient-to-r from-[#B16CEA] via-[#FF7460] to-[#FFA84B] hover:pb-1 pb-1 text-xs md:text-sm ${
-                isActive("/blog")
-                  ? "after:bg-gradient-to-r from-[#B16CEA] via-[#FF7460] to-[#FFA84B]"
-                  : ""
-              }`}
-            >
-              Blog
-            </button>
-          </Link>
+
           <Link to="/cont" target="blank">
             <button className="hover:bg-[#fff] text-[#161513] font-semibold py-2 px-5 hover:border hover:border-white rounded-2xl text-sm bg-[#FFFFFF]">
               Lets Talk

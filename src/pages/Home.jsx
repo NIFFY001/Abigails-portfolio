@@ -98,7 +98,10 @@ export default function Home() {
               </p>
             </div>
             <div className="flex gap-5 pb-5">
-              <img src={hireme} alt="hire me" />
+              <a href="/cont">
+                <img src={hireme} alt="hire me" />
+              </a>
+
               <img src={view} alt="view" />
             </div>
             <div className="text-white">
@@ -170,9 +173,15 @@ export default function Home() {
                 development. If you're looking for the designer, look no
                 further, because you're right here.
               </p>
-              <div className="flex gap-3 md:w-[200px] w-[100px]">
-                <img src={hire1} alt="hire1"></img>
-                <img src={cv} alt="cv"></img>
+              <div className="flex gap-3 md:w-[300px] w-[200px]">
+                <div className="">
+                  <a href="/cont">
+                    <img src={hire1}></img>
+                  </a>
+                </div>
+                <div className="">
+                  <img src={cv}></img>
+                </div>
               </div>
             </div>
           </div>
@@ -220,7 +229,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="bg-[#161513] flex flex-col md:flex-row px-5 w-[100%] items-center p-5 ">
+        <div className="bg-[#161513]  gap-3 flex flex-col md:flex-row px-5 w-[100%] items-center p-5 ">
           <div
             ref={ref9}
             className={`md:w-[50%] text-white ${inView9 ? "zoom-in" : ""}`}

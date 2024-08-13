@@ -11,8 +11,9 @@ export default function Cont() {
         <div className="">
           <Contact />
         </div>
-
-        <Footer />
+        <div className="">
+          <Footer />
+        </div>
       </div>
     </div>
   );

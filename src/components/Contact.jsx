@@ -11,7 +11,7 @@ function Contact() {
   return (
     <>
       <NavBar />
-      <div className="bg-black min-h-[100vh] pt-20">
+      <div className="bg-black min-h-[100vh] pt-20 ">
         <div className="flex flex-col md:flex-row items-center md:px-20 px-5">
           <div className="w-full md:w-[50%] mb-10 md:mb-0 flex gap-10 items-center">
             <div className="text-white ">

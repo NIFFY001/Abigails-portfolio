@@ -7,7 +7,7 @@ import instagram from "../assets/instagram.png";
 function Footer() {
   return (
     <>
-      <div className="bg-[#161513] md:px-20 flex  flex-col md:flex-row justify-between items-center text-white md:p-10 p-4 gap-5 border-t-2 border-t-bg-gradient-to-r from-[#B16CEA] via-[#FF7460] to-[#FFA84B] bg-clip-border">
+      <div className="bg-[#161513] md:px-20 flex  flex-col md:flex-row justify-between items-center text-white md:p-10 p-4 gap-5 border-t-2 border-t-bg-gradient-to-r from-[#B16CEA] via-[#FF7460] to-[#FFA84B] bg-clip-border ">
         <div className="">
           <img src={logo} className="mb-5 h-[40px] md:h-[50px]"></img>
           <p className="">
@@ -23,11 +23,13 @@ function Footer() {
               <a href="/">
                 <ul>Home</ul>
               </a>
-              <a a href="/about">
+              <a href="/about">
                 <ul>About</ul>
               </a>
+              <a href="/services">
+                <ul>Services</ul>
+              </a>
 
-              <ul>Services</ul>
               <ul>Projects</ul>
               <ul>Blog</ul>
             </li>
