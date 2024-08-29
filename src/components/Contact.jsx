@@ -26,15 +26,15 @@ function Contact() {
               </div>
               <p className="text-xl mb-10">Follow Me On</p>
               <div className="flex gap-3">
-                <a href="https://www.linkedin.com/in/alabi-abigail-18495423a/">
+                <Link to="https://www.linkedin.com/in/alabi-abigail-18495423a/">
                   <img src={linkedin}></img>
-                </a>
-                <a href="https://www.tiktok.com/@abigail_tastes">
+                </Link>
+                <Link to="https://www.tiktok.com/@abigail_tastes">
                   <img src={tiktok}></img>
-                </a>
-                <a href="https://www.instagram.com/abigailalabi0/">
+                </Link>
+                <Link to="https://www.instagram.com/abigailalabi0/">
                   <img src={instagram}></img>
-                </a>
+                </Link>
               </div>
             </div>
           </div>

@@ -36,15 +36,15 @@ function Footer() {
           </div>
 
           <div className="flex   md:flex-row justify-end gap-3">
-            <a href="https://www.linkedin.com/in/alabi-abigail-18495423a/">
+            <Link to="https://www.linkedin.com/in/alabi-abigail-18495423a/">
               <img src={linkedin} alt="linkedin" />
-            </a>
-            <a href="https://www.tiktok.com/@abigail_tastes">
+            </Link>
+            <Link to="https://www.tiktok.com/@abigail_tastes">
               <img src={tiktok} alt="tiktok" />
-            </a>
-            <a href="https://www.instagram.com/abigailalabi0/">
+            </Link>
+            <Link to="https://www.instagram.com/abigailalabi0/">
               <img src={instagram} alt="instagram" />
-            </a>
+            </Link>
           </div>
         </div>
       </div>
