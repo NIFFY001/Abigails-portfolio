@@ -68,7 +68,7 @@ function NavBar() {
           </button>
         </Link>
       </div>
-      <Link to="/cont" target="blank" className="hidden md:block">
+      <Link to="/conts" target="blank" className="hidden md:block">
         <button className="font-semibold py-2 px-2 md:px-5 hover:border hover:border-white rounded-2xl text-xs md:text-sm bg-[#FFFFFF] text-[#161513]">
           Lets Talk
         </button>
