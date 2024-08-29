@@ -10,7 +10,7 @@ import instagram from "../assets/instagram.png";
 import dp from "../assets/dp.png";
 import ImageSlider from "../components/ImageSlider";
 import Footer from "../components/Footer";
-
+import { Link } from "react-router-dom";
 export default function About() {
   const { ref: dpRef, inView: dpInView } = useInView({
     triggerOnce: false, // Set to false for continuous triggering
@@ -41,15 +41,15 @@ export default function About() {
             <div className="flex gap-5 items-center">
               <p className="text-xl">Follow Me</p>
               <div className="flex gap-3">
-                <LINK to="https://www.linkedin.com/in/alabi-abigail-18495423a/">
+                <Link to="https://www.linkedin.com/in/alabi-abigail-18495423a/">
                   <img src={linkedin} alt="linkedin" />
-                </LINK>
-                <LINK to="https://www.tiktok.com/@abigail_tastes">
+                </Link>
+                <Link to="https://www.tiktok.com/@abigail_tastes">
                   <img src={tiktok} alt="tiktok" />
-                </LINK>
-                <LINK to="https://www.instagram.com/abigailalabi0/">
+                </Link>
+                <Link to="https://www.instagram.com/abigailalabi0/">
                   <img src={instagram} alt="instagram" />
-                </LINK>
+                </Link>
               </div>
             </div>
           </div>
