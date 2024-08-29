@@ -243,8 +243,8 @@ export default function Home() {
               inView8 ? "animation-slide-in-right" : ""
             }`}
           >
-            <h1 className="text-[35px] ">Testimonial</h1>
-            <p className="text-[20px] leading-[60px]">
+            <h1 className="text-[35px]  ">Testimonial</h1>
+            <p className="md:text-[20px] md:leading-[60px] leading-[30px]">
               The designs are nothing short of amazing, showcasing her
               exceptional talent and dedication to her craft. She possesses a
               profound understanding of user needs and consistently cultivates
@@ -275,12 +275,12 @@ export default function Home() {
               <img
                 ref={ref10}
                 src={side1}
-                className={`w-[600px] ${inView10 ? "zoom-in" : ""}`}
+                className={`w-full ${inView10 ? "zoom-in" : ""}`}
               />
               <img
                 ref={ref11}
                 src={side2}
-                className={`w-[600px] ${inView11 ? "zoom-in" : ""}`}
+                className={`w-full ${inView11 ? "zoom-in" : ""}`}
               />
             </div>
           </div>
