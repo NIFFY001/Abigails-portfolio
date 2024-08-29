@@ -2,6 +2,27 @@
 @tailwind components;
 @tailwind utilities;
 
+.container-w {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+@media (min-width: 200px) and (max-width: 768px) {
+  h1 {
+    font-size: 25px;
+  }
+
+  .small-text {
+    font-size: 10px;
+  }
+  p {
+    font-size: 15px;
+  }
+  a {
+    font-size: 15px;
+  }
+}
+
 .full-scroller-container {
   overflow: hidden;
   position: relative;

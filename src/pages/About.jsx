@@ -26,7 +26,7 @@ export default function About() {
         <div className="flex justify-end px-20 md:mb-[-100px] pt-7 ">
           <img src={star} alt="star" className=" animate-bounce" />
         </div>
-        <div className="flex flex-col md:flex-row items-center md:w-[100%] md:px-20 px-5">
+        <div className="flex flex-col md:flex-row items-center md:w-[100%] md:px-20 px-5 container-w">
           <div className="md:w-[50%] zoom-in">
             <img src={meimg} alt="me" />
             <h1>
@@ -58,7 +58,7 @@ export default function About() {
             <img src={abi3} className="w-full object-cover" alt="abi" />
           </div>
         </div>
-        <div className="mb-[25px]">
+        <div className="mb-[25px] container-w">
           <ImageSlider />
         </div>
         <div className="flex justify-center mb-10">

@@ -68,8 +68,8 @@ export default function Home() {
   return (
     <>
       <NavBar />
-      <div className="bg-[#161513] min-h-[100vh]  w-full">
-        <div className="flex flex-col md:flex-row gap-5 md:leading-[60px] leading-[30px] md:mb-[17px] mb-[30px] items-center md:px-20 px-5 p-10">
+      <div className="bg-[#161513] min-h-[100vh]">
+        <div className=" container-w flex flex-col md:flex-row gap-5 md:leading-[60px] leading-[30px] md:mb-[17px] mb-[30px] items-center md:px-20 px-5 p-10">
           <div
             ref={ref1}
             className={`w-full ${inView1 ? "animation-slide-in-left" : ""}`}
@@ -138,11 +138,11 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="md:mb-[50px] mb-[20px]">
+        <div className="md:mb-[50px] mb-[20px] container-w ">
           <FullScroller image={slider} />
         </div>
 
-        <div className="text-white flex flex-col md:flex-row md:w-[100%] gap-5 items-center ">
+        <div className="text-white flex flex-col md:flex-row md:w-[100%] gap-5 items-center container-w ">
           <div
             ref={ref3}
             className={`md:w-[50%] ${inView3 ? "animation-slide-in-left" : ""}`}
@@ -187,8 +187,8 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="bg-[#000000] pt-12 w-[100%] p-10">
-          <div className="text-center">
+        <div className="bg-[#000000] pt-12 w-[100%] p-10 ">
+          <div className="text-center container-w">
             <span className="bg-gradient-to-r from-[#B16CEA] via-[#FF7460] to-[#FFA84B] bg-clip-text text-transparent text-3xl">
               Selected Projects
             </span>
@@ -229,7 +229,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="bg-[#161513]  gap-3 flex flex-col md:flex-row px-5 w-[100%] items-center p-5 ">
+        <div className="bg-[#161513]  gap-3 flex flex-col md:flex-row px-5 w-[100%] items-center p-5 container-w  ">
           <div
             ref={ref9}
             className={`md:w-[50%] text-white ${inView9 ? "zoom-in" : ""}`}
@@ -243,7 +243,7 @@ export default function Home() {
               inView8 ? "animation-slide-in-right" : ""
             }`}
           >
-            <h1 className="text-[35px]">Testimonial</h1>
+            <h1 className="text-[35px] ">Testimonial</h1>
             <p className="text-[20px] leading-[60px]">
               The designs are nothing short of amazing, showcasing her
               exceptional talent and dedication to her craft. She possesses a
@@ -263,24 +263,26 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="md:px-20  bg-[#000000] p-8 items-center">
-          <div className="flex justify-between items-center mb-9">
-            <span className="bg-gradient-to-r from-[#B16CEA] via-[#FF7460] to-[#FFA84B] bg-clip-text text-transparent text-3xl">
-              Recent Blogs
-            </span>
-            <img src={viewall}></img>
-          </div>
-          <div className="flex flex-col md:flex-row gap-10">
-            <img
-              ref={ref10}
-              src={side1}
-              className={`w-[600px] ${inView10 ? "zoom-in" : ""}`}
-            />
-            <img
-              ref={ref11}
-              src={side2}
-              className={`w-[600px] ${inView11 ? "zoom-in" : ""}`}
-            />
+        <div className=" md:px-20  bg-[#000000] p-8 items-center">
+          <div className="container-w">
+            <div className="flex justify-between items-center mb-9 ">
+              <span className="bg-gradient-to-r from-[#B16CEA] via-[#FF7460] to-[#FFA84B] bg-clip-text text-transparent text-3xl">
+                Recent Blogs
+              </span>
+              <img src={viewall}></img>
+            </div>
+            <div className="flex flex-col md:flex-row gap-10">
+              <img
+                ref={ref10}
+                src={side1}
+                className={`w-[600px] ${inView10 ? "zoom-in" : ""}`}
+              />
+              <img
+                ref={ref11}
+                src={side2}
+                className={`w-[600px] ${inView11 ? "zoom-in" : ""}`}
+              />
+            </div>
           </div>
         </div>
         <Footer />

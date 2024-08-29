@@ -21,7 +21,7 @@ export default function Services() {
       <div className="relative md:leading-[50px] leading-[30px]">
         <img
           src={servicebg}
-          className="h-[2450px]   md:h-[3000px] w-full object-cover"
+          className="h-[2450px]   md:h-[3000px] w-full object-cover "
         ></img>
 
         <div className="absolute inset-0">
@@ -32,7 +32,7 @@ export default function Services() {
             </div>
           </div>
 
-          <div className="flex flex-col md:flex-row text-white items-center md:px-20 px-5">
+          <div className="flex flex-col md:flex-row text-white items-center md:px-20 px-5 container-w">
             <div className="md:w-[50%]">
               <h1 className=" font-jakarta font-bold text-[20px]  mb-3">
                 UI/UX DESIGN
@@ -53,7 +53,7 @@ export default function Services() {
             </div>
           </div>
 
-          <div className="flex flex-col md:flex-row text-white items-center md:px-20 px-5 gap-5">
+          <div className="flex flex-col md:flex-row text-white items-center md:px-20 px-5 gap-5 container-w">
             <div className="md:w-[50%]">
               <img src={ai}></img>
             </div>
@@ -70,7 +70,7 @@ export default function Services() {
             </div>
           </div>
 
-          <div className="flex flex-col md:flex-row text-white items-center md:px-20 px-5 mt-5 ">
+          <div className="flex flex-col md:flex-row text-white items-center md:px-20 px-5 mt-5 container-w ">
             <div className="md:w-[50%]">
               <h1 className="font-jakarta font-bold text-[20px] mb-3">
                 FRONTEND DEV
