@@ -41,15 +41,15 @@ export default function About() {
             <div className="flex gap-5 items-center">
               <p className="text-xl">Follow Me</p>
               <div className="flex gap-3">
-                <a href="https://www.linkedin.com/in/alabi-abigail-18495423a/">
+                <LINK to="https://www.linkedin.com/in/alabi-abigail-18495423a/">
                   <img src={linkedin} alt="linkedin" />
-                </a>
-                <a href="https://www.tiktok.com/@abigail_tastes">
+                </LINK>
+                <LINK to="https://www.tiktok.com/@abigail_tastes">
                   <img src={tiktok} alt="tiktok" />
-                </a>
-                <a href="https://www.instagram.com/abigailalabi0/">
+                </LINK>
+                <LINK to="https://www.instagram.com/abigailalabi0/">
                   <img src={instagram} alt="instagram" />
-                </a>
+                </LINK>
               </div>
             </div>
           </div>
