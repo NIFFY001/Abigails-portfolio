@@ -123,7 +123,7 @@ function NavBar() {
             </button>
           </Link>
 
-          <Link to="/cont" target="blank">
+          <Link to="/conts" target="blank">
             <button className="hover:bg-[#fff] text-[#161513] font-semibold py-2 px-5 hover:border hover:border-white rounded-2xl text-sm bg-[#FFFFFF]">
               Lets Talk
             </button>
