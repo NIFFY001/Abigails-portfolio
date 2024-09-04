@@ -263,28 +263,6 @@ export default function Home() {
           </div>
         </div>
 
-        <div className=" md:px-20  bg-[#000000] p-8 items-center">
-          <div className="container-w">
-            <div className="flex justify-between items-center mb-9 ">
-              <span className="bg-gradient-to-r from-[#B16CEA] via-[#FF7460] to-[#FFA84B] bg-clip-text text-transparent text-3xl">
-                Recent Blogs
-              </span>
-              <img src={viewall}></img>
-            </div>
-            <div className="flex flex-col md:flex-row gap-10">
-              <img
-                ref={ref10}
-                src={side1}
-                className={`w-full ${inView10 ? "zoom-in" : ""}`}
-              />
-              <img
-                ref={ref11}
-                src={side2}
-                className={`w-full ${inView11 ? "zoom-in" : ""}`}
-              />
-            </div>
-          </div>
-        </div>
         <Footer />
       </div>
     </>
