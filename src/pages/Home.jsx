@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+
 import { useInView } from "react-intersection-observer";
 import NavBar from "../components/NavBar";
 import hand from "../assets/hand.png";
@@ -102,7 +103,13 @@ export default function Home() {
                 <img src={hireme} alt="hire me" />
               </a>
 
-              <img src={view} alt="view" />
+              <a
+                href="https://drive.google.com/file/d/1pySeOumtqYW3c01znNIZ-P5a_oraaq1E/view?usp=drive_link"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img src={view} alt="view" />
+              </a>
             </div>
             <div className="text-white">
               <p className="pb-5 text-xl">Follow Me</p>
